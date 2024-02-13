@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4.1-dars</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      code {
+        background: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>4 oy 1 dars uy ishi</h1>
+    <h3>Data Types</h3>
+    <ol>
+      <li>
+        <h4 style="margin: 0">Primitive</h4>
+        <b>Number</b> - 1, 2, -5, 0.2
+      </li>
+      <li><b>String</b> - '' | "" | ``</li>
+      <li><b>Boolean</b> - true, false</li>
+      <li><b>undefined</b> - undefined</li>
+      <li><b>null</b> - null</li>
+      <li><b>bigint</b> - 8n</li>
+      <li>
+        <b>Symbol()</b> - Symbol()
+        <hr />
+      </li>
+      <li>
+        <h4 style="margin: 0">Referance | non-primitive | complex</h4>
+        <b>Object</b> - function | Array [] | Object {}
+      </li>
+    </ol>
+    <h2>Variables</h2>
+    <ol>
+      <li>
+        <p>
+          var * - bu eski turdagi o'zgaruvchi bo'lib, ikkita bir xil o'zgaruvchi
+          e'lon qilish mumkin.
+          <br />
+          <code>
+            var a = 1
+            <br />
+            var a = 2
+          </code>
+          letkin <code>const</code> hamda <code>let</code> da bu mumkin emas.
+        </p>
+        <p>
+          var ni o'zidan oldin ishlatish mumkin va javob -
+          <code>undefined</code>
+          <br />
+          <code>
+            console.log(a) // undefined
+            <br />
+            var a = 1
+          </code>
+        </p>
+      </li>
+      <li>
+        <p>
+          let - var o'rnidagi hozirgi zomanviy o'zgaruvchi, <code>let</code> da
+          'elon qilingan ma'lumotni o'zgaruvchi nomini ishlatgan holda qayta
+          o'zgarish mumkin.
+        </p>
+        <p>
+          <code>let b = 10</code>
+          <br />
+          <code>b = 11 ✅</code>
+          <br />
+          bunday qilish mumkin emas: 👇
+          <br />
+          <code>let b = 11</code>
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>const</code> - bu o'zgaruvchiga berilgan qiymat qayta
+          o'zgartirib bo'lmaydi, ya'ni <code>var</code> hamda
+          <code>let</code> kabi.
+        </p>
+        <p>
+          Shuningdek, <code>const</code> ga doim boshlang'ich qiymat berilish
+          shart.
+        </p>
+        <p>
+          <code>const ism = "Doniyor" ✅</code>
+          <br />
+          <br />
+          <span>Bunday qilish mumkin emas. 👇</span>
+          <br />
+          <code>const ism</code>
+          <br />
+          <code>ism = "Doniyor" ❌</code>
+        </p>
+      </li>
+    </ol>
+    <hr />
+
+    <h2>O'zgaruvchilarni nomlash - name convension</h2>
+    <p>Har qanday o'zgaruvchi $ yoki _ bilan boshlanishi mumkin</p>
+    <ul>
+      <li>Raqam bilan boshlanmaydi</li>
+      <li>katta haftlar turli xil xisoblandi. (key sensitive)</li>
+      <li>- bilan ishlash mumkin emas. <code>let my-name</code> ❌</li>
+      <li>
+        <p>
+          barcha turadgi so'zlarni ham o'zagaruvchi nomiga berib bo'lmaydi, JSda
+          band qilingan so'zlar bor.
+        </p>
+        <img
+          src="https://www.c-sharpcorner.com/UploadFile/BlogImages/12032012235151PM/JavascriptChart.png"
+          width="500"
+          alt=""
+        />
+      </li>
+    </ul>
+    <hr />
+    <h2>Nameing convensions</h2>
+    <ul>
+      <li>Camelcase - <b>biz asosan foydalanamiz !</b></li>
+      <li>Snakecase</li>
+      <li>Kabakcase</li>
+      <li>
+        <img
+          src="https://miro.medium.com/v2/resize:fit:640/1*FDWZfGKTXzTlrORkbqi04w.png"
+          width="300"
+          alt=""
+        />
+      </li>
+    </ul>
+    <hr />
+    <script src="./app.js"></script>
+  </body>
+</html>
